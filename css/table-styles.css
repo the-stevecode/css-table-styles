@@ -1,0 +1,283 @@
+/*!
+ * table-styles  v1.0.0 (https://github.com/the-stevecode/)
+ */
+/*TABLE DEFAULT*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: #1A1919;
+
+    & thead,
+    tfoot {
+        font-weight: bold;
+    }
+
+    & th,
+    td {
+        padding: 10px;
+
+    }
+}
+
+/*TABLE*/
+
+.table{
+    --table-background: transparent;
+
+    --table-td-bg: transparent;
+    --table-td-color: #1A1919;
+
+    --table-th-bg-active: transparent;
+    --table-tr-bg-active: transparent;
+    --table-td-color-active: transparent;
+    --table-tfoot-td-color-active: transparent;
+    width: 100%;
+    color: var(--table-td-color);
+    vertical-align: top;
+
+    & thead th {
+        background-color: var(--table-th-bg);
+        padding: 10px;
+        border-bottom: 2px solid #1A1919;
+        color: var(--table-th-color);
+    }
+
+    & tbody td {
+        color: var(--table-td-color);
+        padding: 10px;
+    }
+
+    & tfoot td {
+        background-color: var(--table-tfoot-td-bg);
+        color: var(--table-tfoot-td-color);
+    }
+}
+/*TABLE T*/
+.table.t {
+    --table-background: transparent;
+    --table-color: #1A1919;
+
+    --table-th-bg: #1A1919;
+    --table-th-color: #e4e4e4;
+
+    --table-td-bg: transparent;
+    --table-td-color: #1A1919;
+
+    --table-tfoot-td-bg: #333;
+    --table-tfoot-td-color: #e4e4e4;
+
+    --table-th-bg-active: transparent;
+    --table-tr-bg-active: transparent;
+    --table-td-color-active: transparent;
+    --table-tfoot-td-color-active: transparent;
+    width: 100%;
+    color: var(--table-color);
+    background-color: var(--table-background);
+    vertical-align: top;
+
+    & thead th {
+        background-color: var(--table-th-bg);
+        padding: 10px;
+        color: var(--table-th-color);
+    }
+
+    & tbody td {
+        color: var(--table-td-color);
+        padding: 10px;
+    }
+
+    & tfoot td {
+        background-color: var(--table-tfoot-td-bg);
+        color: var(--table-tfoot-td-color);
+    }
+}
+.t.rounded{
+    border-radius: 4px;
+    overflow: hidden;
+}
+/*TABLE LIGHT*/
+.t.light {
+    --table-background: #fff;
+    --table-color: #1A1919;
+
+    --table-th-bg: #1A1919;
+    --table-th-color: #e4e4e4;
+
+    --table-td-bg: transparent;
+    --table-td-color: #1A1919;
+
+    --table-tfoot-td-bg: #333;
+    --table-tfoot-td-color: #e4e4e4;
+    width: 100%;
+    color: var(--table-color);
+    background-color: var(--table-background);
+    vertical-align: top;
+
+    & thead th {
+        background-color: var(--table-th-bg);
+        padding: 10px;
+        color: var(--table-th-color);
+    }
+
+    & tbody td {
+        color: var(--table-td-color);
+        padding: 10px;
+    }
+
+    & tfoot td {
+        background-color: var(--table-tfoot-td-bg);
+        color: var(--table-tfoot-td-color);
+    }
+}
+
+/*TABLE DARK*/
+.t.dark {
+    --table-background: #1A1919;
+    --table-color: #e4e4e4;
+
+    --table-th-bg: #e4e4e4;
+    --table-th-color: #1A1919;
+
+    --table-td-bg: transparent;
+    --table-td-color: #e4e4e4;
+
+    --table-tfoot-td-bg: #cccccc;
+    --table-tfoot-td-color: #1A1919;
+
+    width: 100%;
+    color: var(--table-color);
+    background-color: var(--table-background);
+    vertical-align: top;
+
+    & thead th {
+        background-color: var(--table-th-bg);
+        padding: 10px;
+        color: var(--table-th-color);
+    }
+
+    & tbody td {
+        color: var(--table-td-color);
+        padding: 10px;
+    }
+
+    & tfoot td {
+        background-color: var(--table-tfoot-td-bg);
+        color: var(--table-tfoot-td-color);
+    }
+}
+
+/*TABLE BORDERLES*/
+.tb {
+    & thead th {
+        border: 1px solid #222;
+        border-bottom: 2px solid #222;
+    }
+
+    & tbody td {
+        border: 1px solid #222;
+    }
+
+    & tfoot td {
+        border: 1px solid #222;
+        border-top: 2px solid #222;
+    }
+}
+.tb-light {
+    & thead th {
+        border: 1px solid #ddd;
+        border-bottom: 2px solid #ddd;
+    }
+
+    & tbody td {
+        border: 1px solid #ddd;
+    }
+
+    & tfoot td {
+        border: 1px solid #ddd;
+        border-top: 2px solid #ddd;
+    }
+}
+.tb-top {
+    & thead th {
+        border-top: 2px solid #222;
+        border-bottom: 2px solid #222;
+    }
+
+    & tbody td {
+        border-top: 1px solid #ddd;
+    }
+
+    & tfoot td {
+        border-top: 2px solid #222;
+    }
+}
+
+.tb-bottom {
+    & thead th {
+        border-bottom: 2px solid #222;
+    }
+
+    & tbody td {
+        border-bottom: 1px solid #ddd;
+    }
+
+    & tfoot td {
+        border-top: 2px solid #222;
+        border-bottom: 2px solid #222;
+    }
+}
+
+/*TABLE SELECTED*/
+.table.ts {
+    --table-td-color: #1A1919;
+
+    --table-th-bg-active: #f2f2f2;
+    --table-tr-bg-active: #f2f2f2;
+    --table-tfoot-td-color-active: #f2f2f2;
+    width: 100%;
+    color: var(--table-td-color);
+    vertical-align: top;
+    border-color: #dee2e6;
+
+    /*Selectores*/
+
+    & thead th:hover {
+        background-color: var(--table-th-bg-active);
+    }
+
+    & tbody tr:hover {
+        background-color: var(--table-tr-bg-active);
+    }
+
+    & tfoot td:hover {
+        background-color: var(--table-tfoot-td-color-active);
+    }
+}
+
+/*TABLE SELECTEDD*/
+.t.ts {
+    --table-td-color: #1A1919;
+
+    --table-th-bg-active: #333;
+    --table-tr-bg-active: #f2f2f2;
+    --table-tfoot-td-color-active: #1A1919;
+    width: 100%;
+    color: var(--table-td-color);
+    vertical-align: top;
+
+    /*Selectores*/
+
+    & thead th:hover {
+        background-color: var(--table-th-bg-active);
+    }
+
+    & tbody tr:hover {
+        background-color: var(--table-tr-bg-active);
+    }
+
+    & tfoot td:hover {
+        background-color: var(--table-tfoot-td-color-active);
+    }
+}
+/*TABLE RESPOONSIVE*/
