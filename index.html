@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/table-styles.css">
+    <style>
+        /* Estilos para la presentación de la documentación */
+        body {
+            font-family: 'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        span {
+            background-color: #222;
+            color: #fff;
+            font-weight: bold;
+            padding: 3px;
+            border-radius: 4px;
+            white-space: nowrap
+        }
+
+        pre {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, Monaco, monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Librería de Estilos para Tablas</h1>
+
+        <h2>Introducción</h2>
+        <p>La librería de estilos para tablas "table-styles.css" proporciona una serie de estilos predefinidos para
+            mejorar la apariencia de las tablas HTML en tus proyectos web.</p>
+
+        <h2>Uso Básico</h2>
+        <p>Para utilizar estos estilos en tus tablas, simplemente enlaza el archivo CSS en la sección
+            <span>&lt;head&gt;</span> de
+            tu página HTML:
+        </p>
+
+        <pre>
+            <code>
+            &lt;head&gt;
+            &lt;link rel="stylesheet" href="table-styles.css"&gt;
+            &lt;/head&gt;
+        </code>
+    </pre>
+        <p>A continuación, se muestra un ejemplo visual de una tabla estilizada con la librería, con tan solo agregarlo
+            a tu proyecto:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <p>Luego, aplica las clases de estilo a tus tablas y celdas HTML según sea necesario. Por ejemplo:</p>
+
+        <pre>
+            <code>
+                &lt;table class="table"&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt; # &lt;/th&gt;
+                            &lt;th&gt;Nombre de Producto&lt;/th&gt;
+                            &lt;th&gt;Precio unitario&lt;/th&gt;
+                            &lt;th&gt;Cantidad&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt; 1 &lt;/td&gt;
+                            &lt;td&gt;Refresco de Limón&lt;/td&gt;
+                            &lt;td&gt; $12 &lt;/td&gt;
+                            &lt;td&gt; 2 &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt; 2 &lt;/td&gt;
+                            &lt;td&gt;Refresco de Toronja&lt;/td&gt;
+                            &lt;td&gt; $11 &lt;/td&gt;
+                            &lt;td&gt; 3 &lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt; 3 &lt;/td&gt;
+                            &lt;td&gt;Refresco de Tamarindo&lt;/td&gt;
+                            &lt;td&gt; $10 &lt;/td&gt;
+                            &lt;td&gt; 2 &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    &lt;tfoot&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan="2"&gt; Totales&lt;/td&gt;
+                            &lt;td&gt; $33 &lt;/td&gt;
+                            &lt;td&gt; 7 &lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tfoot&gt;
+                &lt;/table&gt;
+            </code>
+    </pre>
+        <p>A continuación, se muestra un ejemplo visual de una tabla estilizada con <span>&lt;table
+                class="table"&gt;</span> de la librería:</p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Algunos toques de estilo</h2>
+        <h3>table border</h3>
+        <p>Puedes agregar bordes a la tabla, con <strong>tb</strong>  <span>&lt;table class="table tb"&gt;</span> toda la tabla tiene bordes</p>
+        <table class="table tb">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Con <strong>tb-light</strong> <span>&lt;table class="table tb-light"&gt;</span> toda la tabla tiene bordes claros</p>
+        <table class="table tb-light">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Con <strong>tb-top</strong> <span>&lt;table class="table tb-top"&gt;</span> todas las filas de la tabla tiene bordes arriba</p>
+        <table class="table tb-top">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p>Con <strong>tb-bottom</strong> <span>&lt;table class="table tb-bottom"&gt;</span> todas las filas de la tabla tiene bordes abajo</p>
+        <table class="table tb-bottom">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h3>table slected</h3>
+        <p>Con <strong>ts</strong> <span>&lt;table class="table ts"&gt;</span> todas las filas de la tabla tiene bordes abajo</p>
+        <table class="table ts">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Ejemplos de Tablas</h2>
+        <p>A continuacion te muestro algunos de los estilos de tabas que puedes utilizar</p>
+
+        <p> Además de la clase <strong>table</strong> podemos agregar otra clase como <strong>t</strong> que es un estilo de tablas de la
+            librería <span>&lt;table class="table t"&gt;</span> </p>
+        <table class="table t">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> También podemos agregar <strong>light</strong> que es un estilo otro de tablas de la
+            librería <span>&lt;table class="table t light"&gt;</span> </p>
+        <table class="table t light">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> También podemos agregar <strong>dark</strong> que es un estilo otro de tablas de la
+            librería <span>&lt;table class="table t dark"&gt;</span> </p>
+        <table class="table t dark">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> Además de la clase <strong>table</strong> podemos agregar otra clase como <strong>rounded</strong> que le dará un estilo redondeado a la tabla de la
+            librería <span>&lt;table class="table t rounded"&gt;</span> </p>
+        <table class="table t rounded">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> Ahora podemos agregar la clase <strong>tb-bottom</strong> que como <span>&lt;table class="table t rounded tb-bottom"&gt;</span> </p>
+        <table class="table t rounded tb-bottom">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> Agregar También la clase <strong>ts</strong> que como <span>&lt;table class="table t rounded tb-bottom ts"&gt;</span> para darle estilo de selección</p>
+        <table class="table t rounded tb-bottom ts">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <p> Ahora podemos quitar la clase <strong>t-bottom</strong> y se quedará <span>&lt;table class="table t rounded ts"&gt;</span>, ahora se vé más elegante</p>
+        <table class="table t rounded ts">
+            <thead>
+                <tr>
+                    <th> # </th>
+                    <th>Nombre de Producto</th>
+                    <th>Precio unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 1 </td>
+                    <td>Refresco de Limón</td>
+                    <td> $12 </td>
+                    <td> 2 </td>
+                </tr>
+                <tr>
+                    <td> 2 </td>
+                    <td>Refresco de Toronja</td>
+                    <td> $11 </td>
+                    <td> 3 </td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>Refresco de Tamarindo</td>
+                    <td> $10 </td>
+                    <td> 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"> Totales</td>
+                    <td> $33 </td>
+                    <td> 7 </td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Personalización</h2>
+        <p>Los estilos pueden ser personalizados según tus necesidades modificando el archivo CSS "table-styles.css".
+            Consulta la documentación incluida en el archivo para más detalles.</p>
+
+        <!-- Otras secciones de documentación, como compatibilidad, ejemplos de código, versiones y licencia, pueden seguir aquí. -->
+
+    </div>
+</body>
+
+</html>
